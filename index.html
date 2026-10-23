@@ -1,234 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro</title>
-<style>
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Comic Sans MS', cursive;
-      background-image: url('https://ik.imagekit.io/Technomaniac143/wowies_kaFs7uXeN?updatedAt=1749754956667');
-      background-attachment: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-      color: #FBFBFB;
-    }
-
-    section {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .port-image {
-      width: 300px;
-      height: 300px;
-      object-fit: cover;
-      border-radius: 10px;
-      border: 2px solid #ccc;
-      margin-bottom: 20px;
-    }
-
-    .bio {
-      max-width: 600px;
-      font-size: 1.2rem;
-    }
-
-    a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: white;
-    }
-
-    .btn {
-      padding: 12px 25px;
-      font-size: 18px;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      margin: 10px;
-      transition: transform 0.3s ease;
-      display: inline-block;
-    }
-
-    #yes {
-      background-color: green;
-      color: white;
-    }
-
-    #no {
-      background-color: red;
-      color: white;
-    }
-
-    .buttons:hover #yes {
-      transform: scale(1.2);
-    }
-
-    .buttons:hover #no {
-      opacity: 0.6;
-    }
-
-    .video {
-      display: none;
-      margin-top: 30px;
-    }
-
-    #show-video:checked ~ .video {
-      display: block;
-    }
-
-    iframe {
-      border-radius: 10px;
-    }
-
-    
-    #Home h1 {
-      font-size: 3.5em; 
-    }
-
-    #Home h2 {
-      font-size: 2.5em; 
-    }
-
-    #Home h3 {
-      font-size: 1.8em; 
-    }
-
-    #Home p a {
-      font-size: 1.2em; 
-    }
-
-    #About .bio {
-      font-size: 1.5em; 
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      font-size: 18px;
-      line-height: 1.8;
-      text-align: center;
-    }
-
-    #Contact h1 {
-      font-size: 2.5em; 
-    }
-
-    #Contact h2, #Contact h3 {
-      font-size: 1.8em; 
-    }
-
-    
-    .project-list {
-      list-style: none;
-      padding: 0;
-      margin: 20px 0;
-    }
-
-    .project-item {
-      margin-bottom: 25px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 700px;
-      text-align: left;
-    }
-
-    .project-item h2 {
-      font-size: 2em;
-      margin-top: 0;
-      color: #fff;
-    }
-
-    .project-item p {
-      font-size: 1.2em;
-      line-height: 1.6;
-    }
-
-    .project-item a {
-      font-size: 1.1em;
-      color: #ADD8E6; 
-      text-decoration: underline;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#E92E3C" />
+  <meta name="description" content="Kameshwaran B — aspiring software engineer building AI products and turning hackathon ideas into tools for real users." />
+  <title>Kameshwaran B — Aspiring Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root { --frame-bg:#e92e3c; --wine:#2a0a10; --ink:#fff8f8; --muted:rgba(255,248,248,.68); --accent:#ffe3e6; --surface:rgba(255,255,255,.1); --strong:rgba(255,255,255,.16); --line:rgba(255,255,255,.22); --shadow:0 24px 60px rgba(20,0,5,.22); }
+    *{box-sizing:border-box} html{scroll-behavior:auto} body{margin:0;background:var(--frame-bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;overflow-x:hidden} a{color:inherit;text-decoration:none} button{font:inherit;color:inherit} .skip{position:fixed;top:10px;left:10px;z-index:100;padding:12px 18px;border-radius:12px;background:#fff;color:#4d0b13;transform:translateY(-150%)} .skip:focus{transform:none}
+    .world{position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 20% 18%,rgba(255,255,255,.1),transparent 27%),linear-gradient(155deg,var(--frame-bg) 0%,#b3202d 48%,var(--wine) 100%)} .orb{position:fixed;border-radius:50%;filter:blur(70px);pointer-events:none;z-index:-1;opacity:.15;transition:transform .5s ease}.orb.one{width:25vw;height:25vw;background:#fff;top:8%;left:-8%}.orb.two{width:30vw;height:30vw;background:#ffb9c1;right:-10%;top:48%}.orb.three{width:22vw;height:22vw;background:#fff;left:34%;bottom:-8%}
+    .nav{position:fixed;top:16px;left:50%;transform:translateX(-50%) translateY(-20px);width:min(860px,calc(100% - 28px));z-index:20;padding:8px 10px 9px;display:flex;align-items:center;gap:18px;border:1px solid rgba(255,255,255,.2);border-radius:22px;background:rgba(45,5,12,.2);backdrop-filter:blur(22px) saturate(160%);box-shadow:0 16px 42px rgba(20,0,5,.16);opacity:0;transition:.5s cubic-bezier(.16,1,.3,1)} .nav.visible{opacity:1;transform:translateX(-50%) translateY(0)} .brand{display:flex;align-items:center;gap:9px;white-space:nowrap;font-size:12px;font-weight:600}.avatar{display:grid;place-items:center;width:31px;height:31px;border-radius:11px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);font-family:'DM Mono';font-size:10px;position:relative}.avatar i{position:absolute;right:-2px;bottom:-2px;width:8px;height:8px;border-radius:50%;background:#83e5a7;border:2px solid #a52a38}.links{display:flex;align-items:center;gap:4px;margin:auto}.links a,.talk{padding:9px 12px;border-radius:13px;color:rgba(255,255,255,.7);font-size:11px}.links a:hover,.links a:focus,.talk:hover{background:rgba(255,255,255,.12);color:#fff}.talk{white-space:nowrap;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.18)}.progress{position:absolute;bottom:-1px;left:14px;height:1px;background:#ffe3e6;width:0;opacity:.8}.menu{display:none;background:none;border:0;padding:8px}
+    .story{height:500vh;position:relative}.sticky{position:sticky;top:0;height:100svh;min-height:560px;overflow:hidden;background:var(--frame-bg)} #sequence{position:absolute;inset:0;width:100%;height:100%;display:block}.story-copy{position:absolute;inset:0;z-index:2;pointer-events:none}.story-card{position:absolute;bottom:12%;max-width:370px;padding:22px 24px;opacity:0;transform:translateY(25px);transition:opacity .45s,transform .45s}.story-card.left{left:max(5vw,24px)}.story-card.right{right:max(5vw,24px)}.story-card.show{opacity:1;transform:none}.story-card h2{font:800 clamp(28px,4vw,56px)/.97 'Bricolage Grotesque';letter-spacing:-.06em;margin:10px 0 12px}.story-card p{color:var(--muted);font-size:13px;line-height:1.6;margin:0}.story-card p+p{margin-top:8px}.glass{background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(20,0,5,.15));border:1px solid var(--line);box-shadow:inset 0 1px 0 rgba(255,255,255,.45),var(--shadow);backdrop-filter:blur(22px) saturate(160%);border-radius:24px}.eyebrow{font:500 10px 'DM Mono';letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}.hero-lock{position:absolute;inset:0;display:grid;place-content:center;text-align:center;pointer-events:none}.hero-lock h1{font:800 clamp(54px,12vw,180px)/.82 'Bricolage Grotesque';letter-spacing:-.09em;margin:0;text-shadow:0 15px 50px rgba(70,0,10,.14)}.hero-lock p{margin:18px 0 0;font:500 clamp(10px,1.2vw,15px) 'DM Mono';letter-spacing:.3em;color:rgba(255,255,255,.8)}.scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);font:10px 'DM Mono';letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.7)}.scroll-hint:after{content:'';display:block;width:1px;height:34px;background:linear-gradient(#fff,transparent);margin:9px auto 0;animation:pulse 1.5s ease-in-out infinite}@keyframes pulse{50%{opacity:.25;transform:scaleY(.6)}}
+    .section{padding:150px 24px;position:relative}.container{width:min(1240px,100%);margin:auto}.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:52px}.section-head h2{font:800 clamp(44px,8vw,110px)/.86 'Bricolage Grotesque';letter-spacing:-.08em;margin:0}.section-head p{max-width:280px;color:var(--muted);font-size:13px;line-height:1.6;margin:0 0 4px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.panel{padding:28px}.reveal{opacity:0;transform:translateY(80px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}.reveal.in{opacity:1;transform:none}.about-card{grid-column:span 4;min-height:430px;display:flex;flex-direction:column;justify-content:space-between}.portrait{width:100%;aspect-ratio:1;border-radius:18px;background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(45,0,8,.24));display:grid;place-items:center;font:800 clamp(70px,10vw,140px) 'Bricolage Grotesque';letter-spacing:-.1em;color:rgba(255,255,255,.78)}.facts{display:flex;justify-content:space-between;font:10px 'DM Mono';color:var(--muted)}.bio{grid-column:span 8;padding:8px 0 0 20px}.bio h3{font:600 clamp(30px,4vw,62px)/1.02 'Bricolage Grotesque';letter-spacing:-.06em;max-width:680px;margin:0 0 24px}.bio p{max-width:600px;color:var(--muted);font-size:15px;line-height:1.8}.skill-wrap{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}.pill{font:11px 'DM Mono';padding:9px 12px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18)}
+    .stat{grid-column:span 3;padding:26px;min-height:150px}.stat b{display:block;font:800 clamp(42px,5vw,72px) 'Bricolage Grotesque';letter-spacing:-.08em}.stat span{font:11px 'DM Mono';color:var(--muted)}.rows{margin-top:18px;display:grid;gap:10px}.row{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:20px 22px}.row strong{font-size:14px}.row small{font:10px 'DM Mono';color:var(--accent);text-align:right}.project-stack{display:grid;gap:16px}.project{min-height:260px;display:flex;flex-direction:column;justify-content:space-between;padding:32px;transition:transform .4s,opacity .4s}.project.feature{min-height:340px}.project-top{display:flex;justify-content:space-between;gap:20px}.project h3{font:800 clamp(38px,6vw,82px)/.88 'Bricolage Grotesque';letter-spacing:-.08em;margin:0}.project p{max-width:620px;color:var(--muted);line-height:1.65;font-size:14px;margin:20px 0 0}.tag{font:10px 'DM Mono';color:var(--accent);border:1px solid rgba(255,227,230,.4);padding:7px 10px;border-radius:99px;height:max-content;white-space:nowrap}.project-foot{display:flex;align-items:end;justify-content:space-between;gap:20px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tags span{font:10px 'DM Mono';color:rgba(255,255,255,.6)}.links-btn{display:flex;gap:8px}.links-btn a{font:11px 'DM Mono';padding:10px 13px;border-radius:12px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.08)}
+    .timeline{position:relative;max-width:900px;margin:auto}.timeline:before{content:'';position:absolute;left:11px;top:0;bottom:0;width:1px;background:rgba(255,255,255,.22)}.timeline-entry{position:relative;padding-left:52px;margin-bottom:18px}.timeline-entry:before{content:'';position:absolute;left:5px;top:28px;width:13px;height:13px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 6px rgba(255,227,230,.12)}.timeline-entry h3{margin:0 0 8px;font:600 27px 'Bricolage Grotesque';letter-spacing:-.04em}.timeline-entry p{margin:0;color:var(--muted);font-size:13px;line-height:1.7}.contact{text-align:center;padding-bottom:80px}.contact h2{font:800 clamp(58px,12vw,170px)/.8 'Bricolage Grotesque';letter-spacing:-.1em;margin:0 auto 45px;max-width:1050px}.contact-links{display:flex;justify-content:center;flex-wrap:wrap;gap:10px}.contact-links a{padding:16px 20px;border-radius:18px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);font-size:13px}.footer{border-top:1px solid rgba(255,255,255,.18);padding:24px;display:flex;justify-content:space-between;color:rgba(255,255,255,.5);font:10px 'DM Mono';letter-spacing:.08em}
+    @media(max-width:760px){.links,.talk{display:none}.menu{display:block;margin-left:auto}.nav{border-radius:18px}.story{height:400vh}.story-card{left:16px!important;right:16px!important;bottom:10%;max-width:none;padding:18px}.story-card h2{font-size:32px}.hero-lock h1{font-size:19vw}.hero-lock p{letter-spacing:.18em}.section{padding:100px 16px}.section-head{display:block;margin-bottom:35px}.section-head p{margin-top:22px}.about-card,.bio,.stat{grid-column:span 12}.bio{padding:20px 0}.about-card{min-height:390px}.stat{min-height:120px}.project{min-height:300px;padding:22px}.project h3{font-size:56px}.project-top{display:block}.tag{display:inline-block;margin-top:18px}.project-foot{display:block}.tags{margin-bottom:20px}.footer{display:block;line-height:2.2}.orb{filter:blur(50px)}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.nav{opacity:1;transform:translateX(-50%)}}
+    @supports not ((backdrop-filter:blur(2px))){.glass,.nav{background:rgba(75,8,18,.88)}}
   </style>
 </head>
 <body>
-
-<section id = "Home">
-    <h1> Kameshwaran B</h1>
-    <h2>Tech Enthusiast & Graphic Designer</h2>
-    <h3>Welcome to my Portfolio :)</h3>
-    <p>
-        <a href="#Home">Home</a> |
-        <a href="#About">About</a> |
-        <a href="#Projects">Projects</a> | 
-        <a href="#Contact">Contact</a>
-    </p>
-</section>
-
-<section id="About">
-    <img src="https://lh3.googleusercontent.com/fife/ALs6j_GTHG6i4RtIsW2XIr55jlxOf8RUkl7kpw1ARdivPVjWjPDL2FDLX91y34BbPJifKH4YKEAaa1nY43KO9ASaExkUNi2ffQOdUEkITeoQ3cYUXV2MeZKNkACtcgfj6_tXz56TrTko5mRebehW3grN4onyembbFw4Vl-oQmlRo8-ZMngmd43tMd-r0LROLmu_l-U-9URkJfEG1LBwofAw_Y4SNV-acwj0rV_psJOezeBYj6C9vS5ZwqeC57zx7Hv1YPCP7qll8-nI8wCVcAy-u_neMS6z42XxblJp2ttKtrLobChys3339xIHwAR1U9qjH3696PSm_h2R583B3FFQKEW85TCyRi4nNc-Y8ANytLBvGFQLJzANCXgw5xZaJEEAmQJ3UhyS0HZvFeUPXCKce9KLlp_Y2kt676nmTRHEYTtPuXX25RW7spanle4U0CszVwkbi981vu4hSR3tj_38WpAwHMl2oekzqF3ACXYrXSKbZtReJFdC4VtjrjXqgbQ8MpMCOQumIWwllLRWnO0U4s9hSFjbPKveBfXnmwRDm0N9Lp1UQSMa46YH7P2EDxwYUAwSR5cI3w-rt8HtuVNpLTiSAPuko0RdYWkmLrAcTUQaBPR-37q4u6S-zPEvsgo6ReqRGadP_CV0T9BD7UEM_qWJE_PYpLt9n6xmbvTdd7rQyHRZSlebZgL7GywgYnciHvcG6hZ7i1PFxaYZYiME_AclrQffN12RRQLhHLnxUnslUVFpx054-QlLrXEloqN_8kGuXS00CwZweXTpxkb0p2LOzdO0jAptrjNKJ69Bfk-lcMo5PFg-NR153gtpLdMOl9gCbQ0tFO05NGPiNE0Vtf1uahZuONw51hOJ3aejB4YlV5vxt9rXlw-tBysBxtY-JvdRifwN4s8Mk68-qA44euditesqmb-7Px9enXbVDb2KXgPPtiypZSkofY3K-Qon46trXsHiM6MKPyb2ggMD6tLCj478EPYR0LLvQS7_llszwoes3D5Ee4_jO4O_OR3DBlweywU3YXEgjFjylTLRUZzGqxcQUuSzv50X7Ysraak9WSQYx-QaQsD1jEYYDBtZaeZWioKKJdKXic1ivUWqO3AEC7c5pUqaneGxNiHS8iamVsLPHkfoVoTHWg5n8JFvoAhw8Oe0ujBhkBqPQtV1gynaho5-jBU-qrPgOtin1YM_JnjMaJnX2N1i-aHTsQojXiYf_Dh8D93y_QbBGOPnBzMFVvaTKXoIsGg9e-WoYfhKHZPw14w7T32zSGk6uAhgmtSv9e_FwKFNLwTQtALNH2GUzUYRleTbopnnXW0ZEpuEP6GbP5McGRgTKNIIpa4YXi5jGtA-mSJOnEhp-Y0O6suoh9HpOs9iidnUbNXV9ZnKsXQ2rR2ZspjKdZ-sPdbIZVfmdiNduk4mGANVJ7vfYir9MIVCL98Rf4ktx9rH_lNArz8IQFScd_Qw3vfa9r_wuDrSH355JE97o_7RTHDo85eG9AzJjqt_1oo7c239un4ECgKFQFR4-ZQkvVYRLInpUpYrOScf7oNmWAyQ940_KoNuFqZ1kzwkP1HrdkZffJlmGrj-NjTPm7bizHeRQItXiT8M2ZjTMwpz5JWCjjKQM-RQ54ZT_kFVCcQ5wJ2Qv" alt="Kameshwaran B" class="port-image">
-    <div class ="bio">
-        <h1>About Me</h1>
-      <p>
-        Hi, I'm Kameshwaran B, a tech enthusiast and graphic designer. I love exploring new technologies and creating visually appealing designs.
-        My interests include robotics, gaming, coding, and poetry. I also enjoy sports, especially badminton.
-      </p>
-    <p>
-      I enjoy exploring emerging technologies. My journey began with curiosity about how things work, which led me to coding, robotics, and digital art.
-      Over the years, I have developed skills in various programming languages and design tools. I am always eager to expand my knowledge and take on new challenges.
-    </p>
-    </div>
-
-    <h1>Wanna watch a short video about me?</h1>
-
-    <input type="checkbox" id="show-video" style="display: none;" />
-
-    <div class="buttons">
-      <label for="show-video" class="btn" id="yes">Yes</label>
-      <button class="btn" id="no">No</button>
-    </div>
-    <div class="video">
-      <video width="560" height="315" controls>
-        <source src="https://ik.imagekit.io/Technomaniac143/0614.mp4?updatedAt=1749895331623" type="video/mp4">
-      </video>
-    </div>
-  </section>
-
-    <section id="Projects">
-
-    <h1>My GitHub Projects</h1>
-
-    <ul class="project-list">
-      <li class="project-item">
-        <h2><a href="https://github.com/Technomaniac143/Study-Sorted-" target="_blank">Technomaniac143/Study-Sorted-</a></h2>
-
-        <p>StudySorted is a Python-based intelligent file management assistant that automatically organizes study materials by understanding their content.</p>
-
-      </li>
-      <li class="project-item">
-
-        <h2><a href="https://github.com/Technomaniac143/Formal-Resume-editor" target="_blank">Technomaniac143/Formal-Resume-editor</a></h2>
-
-        <p>A project for editing formal resumes.</p>
-      </li>
-    </ul>
-
-  </section>
-
-  <section id="Contact">
-    <h1>What's the fuss about contact, here ya go!</h1>
-    <h2>Mail ID: kameshwaranbtc2022@gmail.com</h2>
-    <h3>Insta: Technomaniac._.143</h3>
-  </section>
-
-</body>
-</html>
+<a class="skip" href="#main">Skip to content</a><div class="world"></div><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div>
+<header class="nav" aria-label="Primary navigation"><a class="brand" href="#top"><span class="avatar">KB<i></i></span><span>Kameshwaran B</span></a><nav class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a></nav><a class="talk" href="mailto:Kameshwaranbtc2022@gmail.com">Let&apos;s talk</a><button class="menu" aria-label="Open navigation">☰</button><span class="progress"></span></header>
+<main id="main"><section id="top" class="story" aria-label="Name reveal story"><div class="sticky"><canvas id="sequence" aria-label="Animated block letters resolving into the name Kameshwaran"></canvas><div class="hero-lock"><div><div class="eyebrow">Kameshwaran B · Chennai</div><h1>KAMESH</h1><p>ASPIRING SOFTWARE ENGINEER</p></div></div><div class="story-copy"><div class="story-card glass left" data-range=".12,.38"><span class="eyebrow">01 / Decode</span><h2>Every build starts as noise.</h2><p>Hackathon ideas, agent workflows, and half-formed prototypes, decoded into products.</p></div><div class="story-card glass right" data-range=".38,.68"><span class="eyebrow">02 / Resolve</span><h2>Then it clicks.</h2><p>2nd place at a national hackathon, among 2700+ participants.</p><p>2nd place at She Safe Hackathon 2026.</p><p>Finalist at Agentathon, PES University.</p></div><div class="story-card glass" data-range=".68,.85" style="left:50%;transform:translate(-50%,25px);text-align:center;max-width:540px"><span class="eyebrow">Kameshwaran B, Chennai</span><p style="font-size:16px;color:#fff;margin-top:12px">I build AI products and take hackathon builds toward real users.</p></div><div class="story-card glass" data-range=".85,1" style="left:50%;transform:translate(-50%,25px);text-align:center;max-width:560px"><span class="eyebrow">03 / Ship</span><p style="font-size:16px;color:#fff">Driven by Passion, Guided by Reflection</p><div class="contact-links" style="margin-top:18px"><a href="#projects">View my work</a><a href="mailto:Kameshwaranbtc2022@gmail.com">Email me</a></div></div></div><div class="scroll-hint">Scroll</div></div></section>
+<section id="about" class="section"><div class="container"><div class="section-head reveal"><h2>About</h2><p>Curiosity first. Reflection always. Building useful things somewhere between the two.</p></div><div class="grid"><div class="about-card panel glass reveal"><div class="portrait">KB</div><div class="facts"><span>CHENNAI, INDIA</span><span>CS &amp; ENGINEERING</span></div></div><div class="bio reveal"><h3>AI products with a pulse of their own.</h3><p>I&apos;m Kameshwaran B, an aspiring software engineer at Chennai Institute of Technology. I like taking fuzzy ideas — especially the ones born at hackathons — and making them clear, useful, and ready for real users.</p><p>Right now I&apos;m building Orbis, an ERP platform for SMBs, while learning production-grade backend architecture: auth, RLS-based multi-tenancy, and scaling Postgres.</p><div class="skill-wrap"><span class="pill">Python</span><span class="pill">TypeScript</span><span class="pill">NLP</span><span class="pill">Agentic AI</span><span class="pill">NestJS</span><span class="pill">Next.js</span><span class="pill">PostgreSQL</span><span class="pill">Product building</span></div></div></div></div></section>
+<section class="section" id="proof"><div class="container"><div class="section-head reveal"><h2>Proof</h2><p>Small numbers, real stories. A few signals from the work so far.</p></div><div class="grid"><div class="stat glass reveal"><b>8.3</b><span>CGPA / B.TECH CSE</span></div><div class="stat glass reveal"><b>2</b><span>HACKATHON PODIUM FINISHES</span></div><div class="stat glass reveal"><b>2700+</b><span>PARTICIPANTS / NATIONAL LEVEL</span></div><div class="stat glass reveal"><b>120+</b><span>LEETCODE PROBLEMS · 1408 RATING</span></div></div><div class="rows"><div class="row glass reveal"><strong>Project Sankalp · CODE 4 CHANGE National Level Hackathon 2026</strong><small>2ND PLACE · ₹30,000</small></div><div class="row glass reveal"><strong>She Safe Hackathon 2026 · RVCE &amp; DSCI India</strong><small>2ND PLACE · ₹5,000</small></div><div class="row glass reveal"><strong>Agentathon · PES University</strong><small>FINALIST</small></div></div></div></section>
+<section class="section" id="projects"><div class="container"><div class="section-head reveal"><h2>Selected work</h2><p>From trust scores to ERP platforms — projects with a point of view.</p></div><div class="project-stack"><article class="project feature glass reveal"><div class="project-top"><div><span class="eyebrow">01 / Signature</span><h3>TruthLens</h3><p>Deepfake and media detection with a SigLIP-2 ensemble, 0–100 trust score, and cross-modal checks.</p></div><span class="tag">AI / MEDIA</span></div><div class="project-foot"><div class="tags"><span>Python</span><span>Hugging Face</span><span>PyTorch</span><span>Streamlit</span></div><div class="links-btn"><a href="https://github.com/Technomaniac143/TruthLens007" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></article><article class="project glass reveal"><div class="project-top"><div><span class="eyebrow">02 / Building</span><h3>Orbis</h3><p>ERP platform for SMBs with RBAC via Postgres RLS.</p></div><span class="tag">IN PROGRESS</span></div><div class="project-foot"><div class="tags"><span>NestJS</span><span>Next.js</span><span>Prisma</span><span>PostgreSQL</span></div></div></article><article class="project glass reveal"><div class="project-top"><div><span class="eyebrow">03 / Utility</span><h3>Study Sorted</h3><p>A Python file management assistant that organizes study materials by understanding their content.</p></div><span class="tag">AUTOMATION</span></div><div class="project-foot"><div class="tags"><span>Python</span><span>Content analysis</span></div><div class="links-btn"><a href="https://github.com/Technomaniac143/Study-Sorted-" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></article><article class="project glass reveal"><div class="project-top"><div><span class="eyebrow">04 / Experiments</span><h3>More, in motion.</h3><p>HTML Resume Editor, She Safe, Shoppers Loop, and ARGUS — each one a step toward more useful software.</p></div><span class="tag">EXPLORE</span></div><div class="project-foot"><div class="tags"><span>Web</span><span>Agentic workflows</span><span>Product</span></div></div></article></div></div></section>
+<section class="section" id="experience"><div class="container"><div class="section-head reveal"><h2>Experience</h2><p>Learning by getting close to the problem.</p></div><div class="timeline"><div class="timeline-entry panel glass reveal"><span class="eyebrow">May 2026 — June 2026 · Chennai</span><h3>Machine Learning Engineer · TVK Technologies</h3><p>Designed an AI-powered resume screening workflow with NLP, semantic matching, and ATS scoring. Built a Gradio dashboard with analytics, ranking charts, and CSV export.</p><p style="margin-top:12px;color:#fff">Python · spaCy · Scikit-learn · Plotly · Matplotlib</p></div><div class="timeline-entry panel glass reveal"><span class="eyebrow">Community</span><h3>Leadership &amp; contribution</h3><p>Events Manager, Impact CIT. Content Owner, GS Labs X Chennai (Girl Script Foundation). Contributor, GssoC.</p></div></div></div></section>
+<section class="section" id="education"><div class="container"><div class="section-head reveal"><h2>Education</h2><p>The long game: a strong foundation for ambitious systems.</p></div><div class="timeline"><div class="timeline-entry panel glass reveal"><span class="eyebrow">Expected May 2029 · Chennai</span><h3>Chennai Institute of Technology</h3><p>B.Tech in Computer Science &amp; Engineering · CGPA 8.3</p></div><div class="timeline-entry panel glass reveal"><span class="eyebrow">Beyond code</span><h3>Badminton, poetry, Rubik&apos;s Cube.</h3><p>Different ways to stay attentive, patient, and a little playful.</p></div></div></div></section>
+<section class="section contact" id="contact"><div class="container"><div class="eyebrow reveal">Open to thoughtful collaborations</div><h2 class="reveal">Got something to build?</h2><div class="contact-links reveal"><a href="mailto:Kameshwaranbtc2022@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/kameshwaran-b-779363338/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/Technomaniac143" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section></main><footer class="footer"><span>© 2026 Kameshwaran B</span><span>Chennai, India</span></footer>
+<script>
+const canvas=document.querySelector('#sequence'),ctx=canvas.getContext('2d'),story=document.querySelector('.story'),nav=document.querySelector('.nav'),bar=document.querySelector('.progress'),cards=[...document.querySelectorAll('.story-card')], reduced=matchMedia('(prefers-reduced-motion: reduce)').matches; let dpr=Math.min(devicePixelRatio||1,2), last=-1, frame=0;
+function resize(){dpr=Math.min(devicePixelRatio||1,2);canvas.width=innerWidth*dpr;canvas.height=innerHeight*dpr;canvas.style.width=innerWidth+'px';canvas.style.height=innerHeight+'px';draw(frame)}
+function draw(i){ctx.setTransform(dpr,0,0,dpr,0,0);ctx.fillStyle=getComputedStyle(document.documentElement).getPropertyValue('--frame-bg').trim()||'#e92e3c';ctx.fillRect(0,0,innerWidth,innerHeight);const p=Math.max(0,Math.min(1,i/103));ctx.textAlign='center';ctx.textBaseline='middle'; if(p>.1&&p<.72){ctx.globalAlpha=.15;ctx.font='800 '+Math.min(innerWidth*.1,125)+'px Bricolage Grotesque';ctx.fillStyle='#fff';ctx.fillText('KΛMΞSΗ',innerWidth/2,innerHeight*.43);ctx.globalAlpha=1} }
+function progress(){const max=story.offsetHeight-innerHeight,p=Math.max(0,Math.min(1,(scrollY-story.offsetTop)/max));frame=reduced?103:p*103;const shown=Math.round(frame);if(shown!==last){last=shown;draw(shown)}bar.style.width=(p*100)+'%';nav.classList.toggle('visible',scrollY>12);cards.forEach(c=>{const [a,b]=c.dataset.range.split(',').map(Number);c.classList.toggle('show',p>=a&&p<=b)});document.querySelector('.orb.one').style.transform=`translateY(${p*80}px)`;document.querySelector('.orb.two').style.transform=`translateY(${-p*120}px)`}
+new ResizeObserver(resize).observe(canvas);addEventListener('resize',resize);addEventListener('scroll',progress,{passive:true});resize();progress();
+const observer=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e));
+document.querySelector('.menu').addEventListener('click',()=>document.querySelector('.links').style.display=document.querySelector('.links').style.display==='flex'?'none':'flex');
+</script></body></html>
